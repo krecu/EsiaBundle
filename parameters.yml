@@ -1,0 +1,23 @@
+esia:
+        #- ID вашего приложения.
+        clientId: 'INSP03211'
+        #- URL куда будет перенаправлен ответ с кодом.
+        redirectUrl: 'http://localhost:9000/login/endpoint'
+        #- по умолчанию: https://esia-portal1.test.gosuslugi.ru/. Домен портала для авторизация (только домен).
+        portalUrl: 'https://esia-portal1.test.gosuslugi.ru/'
+        # - по умолчанию: aas/oauth2/ac. URL для получения кода.
+        codeUrl: ''
+        # - по умолчанию: aas/oauth2/te. URL для получение токена.
+        tokenUrl: ''
+        # - по умолчанию: http://esia.gosuslugi.ru/usr_inf. Запрашиваемые права у пользователя.
+        scope: ''
+        # - путь до приватного ключа.
+        privateKeyPath: '/home/eugen/Work/projects/eski-auth/app/cert/privkey.pem'
+        # - пароль от приватного ключа.
+        privateKeyPassword: 'test'
+        #- путь до сертификата.
+        certPath: '/home/eugen/Work/projects/eski-auth/app/cert/cert.pem'
+        #- путь до дериктории где будет проходить подпись (должна быть доступна для записи).
+        tmpPath: '/tmp'
+        #- callable с одни параметром $message, в который будет передаваться сообщения лога.
+        log: ''

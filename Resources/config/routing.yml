@@ -1,0 +1,6 @@
+esia_login:
+    path:     /login/esia
+    defaults: { _controller: EsiaBundle:Default:login }
+esia_endpoint:
+    path:     /login/endpoint
+    defaults: { _controller: EsiaBundle:Default:endpoint }
